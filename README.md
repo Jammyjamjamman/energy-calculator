@@ -6,7 +6,8 @@ calculates the energy of different objects based on the equation E=mc2
 * Written in [rust](https://www.rust-lang.org/)
 * A menu is displayed to the user
 * For starters, menu items will be
-  * an chocolate chip cookie
-  * a 1 oz nugget of Uranium
+  * a chocolate chip cookie
+  * a 1 ounce nugget of Uranium
+  * a 8 pound 6 ounce newborn baby
 * user can select an item from the menu
 * the program will calculate the energy of the item, based on Einstein's equation E=mc2 (Energy = Mass * the velocity of light(squared)
