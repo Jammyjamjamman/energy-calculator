@@ -1,6 +1,8 @@
 # energy-calculator
 calculates the energy of different objects based on the equation E=mc2
 
+[![Build Status](https://travis-ci.com/theimpossibleastronaut/energy-calculator.svg?branch=master)](https://travis-ci.com/theimpossibleastronaut/energy-calculator)
+
 # Design goals
 
 * Written in [rust](https://www.rust-lang.org/)
