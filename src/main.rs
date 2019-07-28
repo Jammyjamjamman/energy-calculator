@@ -10,7 +10,7 @@ fn main() {
 
 // should the weight be displayed using the metric system?
 // Should the weight be using a value that can be used to auto-determine its mass?
-    let data: [Item; 3] = [
+    let data = [
     Item {
         name: String::from("Chocolate chip cookie"),
         weight: String::from("2 ounces"),
