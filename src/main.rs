@@ -17,8 +17,6 @@ impl Item {
 }
 
 fn main() {
-    println!("Hello, world!");
-
     // should the weight be displayed using the metric system?
     // Should the weight be using a value that can be used to auto-determine its mass?
     // We are assuming mass is given in kg. N.B. these are not realistic
