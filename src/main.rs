@@ -1,20 +1,5 @@
-const SPEED_OF_LIGHT : f64 = 299792458f64;
-
-struct Item {
-    name: String,
-    weight: String,
-    mass: f64,
-}
-
-struct Energy(f64);
-
-
-// This gives an Item (which has mass) a method to convert it to energy.
-impl Item {
-    fn to_energy(&self) -> Energy {
-        Energy(self.mass * SPEED_OF_LIGHT * SPEED_OF_LIGHT)
-    }
-}
+mod physics;
+use physics::{Item};
 
 fn main() {
     // should the weight be displayed using the metric system?
