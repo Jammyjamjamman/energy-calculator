@@ -1,5 +1,5 @@
 mod physics;
-use physics::{Item, converter};
+use physics::{converter, Item};
 
 fn main() {
     // should the weight be displayed using the metric system?
@@ -25,10 +25,4 @@ fn main() {
 
     let energy = data[0].to_energy();
     println!("mass: {}kg, energy: {}J", data[0].mass, energy.0);
-
-    // Test unit converter.
-    let some_speed = converter::MetresPerSecond(30f64);
-    println!("Speed in m/s: {}m/s", some_speed.0);
-    println!("Speed in mph: {:.1}mph", converter::MilesPerHour::from(some_speed).0);
-    println!("Speed in kph: {}kph", converter::KilometresPerHour::from(some_speed).0);
 }

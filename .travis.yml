@@ -2,4 +2,5 @@ language: rust
 os: linux
 dist: bionic
 script:
+  - cargo test
   - cargo run --verbose
