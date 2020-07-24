@@ -12,6 +12,12 @@ fn test_speed() {
 }
 
 #[test]
+fn test_distance() {
+    let some_distance = converter::Metres(1.0);
+    assert_eq!(3.28084, converter::Feet::from(some_distance).0);
+}
+
+#[test]
 fn test_energy() {
     let some_energy = converter::Joules(5.0);
     assert_eq!(
@@ -30,4 +36,25 @@ fn test_weight() {
 fn test_temperature() {
     let some_temp = converter::Kelvin(5778.53);
     assert_eq!(9941.684, converter::Fahrenheit::from(some_temp).0);
+
+    let some_temp = converter::Celsius(0.0);
+    assert_eq!(32.0, converter::Fahrenheit::from(some_temp).0);
+}
+
+#[test]
+fn test_time() {
+    let some_time = converter::Seconds(3600.0);
+    assert_eq!(1.0, converter::Hours::from(some_time).0);
+}
+
+#[test]
+fn test_force() {
+    let some_force = converter::Newtons(5.0);
+    assert_eq!(1.124045, converter::PoundForce::from(some_force).0);
+}
+
+#[test]
+fn test_torque() {
+    let some_torque = converter::NewtonMetre(10.0);
+    assert_eq!(7.375621492772701, converter::PoundFeet::from(some_torque).0);
 }
